@@ -7,6 +7,10 @@
 //
 
 import UIKit
+import Parse
+
+
+var hospital: Hospital?
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,7 +19,36 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.makeKeyAndVisible()
+        
+        let layout = UICollectionViewFlowLayout()
+        window?.rootViewController = UINavigationController(rootViewController: HomeController(collectionViewLayout: layout ))
+        
+        UINavigationBar.appearance().barTintColor = UIColor.appMainBlue //Navigation Bar color
+        
+        UINavigationBar.appearance().titleTextAttributes = [NSAttributedStringKey(rawValue: NSAttributedStringKey.foregroundColor.rawValue): UIColor.white]// nav title color
+        
+        //bar shadow
+        UINavigationBar.appearance().shadowImage = UIImage()
+        UINavigationBar.appearance().setBackgroundImage(UIImage(),for: .default)
+        
+        application.statusBarStyle = .lightContent
+        
+        let statusBackground = UIView()
+        statusBackground.backgroundColor = UIColor.rgb(red: 27, green: 60, blue: 120) // status bar color
+        statusBackground.translatesAutoresizingMaskIntoConstraints = false
+        window?.addSubview(statusBackground)
+        
+        window?.addFormatedConstraint(format: "H:|[v0]|", views: statusBackground)
+        window?.addFormatedConstraint(format: "V:|[v0(20)]|", views: statusBackground)
+        
+        let configuration = ParseClientConfiguration {
+            $0.applicationId="APPLICATION_ID";
+            $0.clientKey="MASTER_KEY";
+            $0.server="http://192.168.1.6:1337/parse/";
+        }
+        Parse.initialize(with: configuration)
         return true
     }
 

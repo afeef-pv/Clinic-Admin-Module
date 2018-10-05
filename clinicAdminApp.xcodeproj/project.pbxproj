@@ -9,11 +9,25 @@
 /* Begin PBXBuildFile section */
 		B9981C722161DEB4000A8906 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9981C712161DEB4000A8906 /* AppDelegate.swift */; };
 		B9981C742161DEB4000A8906 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9981C732161DEB4000A8906 /* ViewController.swift */; };
-		B9981C772161DEB4000A8906 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9981C752161DEB4000A8906 /* Main.storyboard */; };
 		B9981C792161DEB4000A8906 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9981C782161DEB4000A8906 /* Assets.xcassets */; };
 		B9981C7C2161DEB4000A8906 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9981C7A2161DEB4000A8906 /* LaunchScreen.storyboard */; };
 		B9981C872161DEB5000A8906 /* clinicAdminAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9981C862161DEB5000A8906 /* clinicAdminAppTests.swift */; };
 		B9981C922161DEB5000A8906 /* clinicAdminAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9981C912161DEB5000A8906 /* clinicAdminAppUITests.swift */; };
+		B9981CA12161DF9D000A8906 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9981CA02161DF9D000A8906 /* Extensions.swift */; };
+		B9981CA52161EDBA000A8906 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9981CA42161EDBA000A8906 /* PostCell.swift */; };
+		B9981CA72161EDE6000A8906 /* MenuBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9981CA62161EDE6000A8906 /* MenuBar.swift */; };
+		B9981CA92161EE1D000A8906 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9981CA82161EE1D000A8906 /* FeedCell.swift */; };
+		B9981CAB2161EE39000A8906 /* AboutCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9981CAA2161EE39000A8906 /* AboutCell.swift */; };
+		B9981CAD2161EE6F000A8906 /* InfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9981CAC2161EE6F000A8906 /* InfoCell.swift */; };
+		B9981CAF2161EF1B000A8906 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9981CAE2161EF1B000A8906 /* PostViewController.swift */; };
+		B9981CB22161EFAC000A8906 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9981CB02161EFAB000A8906 /* Parse.framework */; };
+		B9981CB32161EFAC000A8906 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9981CB12161EFAC000A8906 /* Bolts.framework */; };
+		B9981CB62161F039000A8906 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9981CB52161F030000A8906 /* SystemConfiguration.framework */; };
+		B9981CB82161F050000A8906 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9981CB72161F047000A8906 /* AudioToolbox.framework */; };
+		B9981CBA2161F068000A8906 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B9981CB92161F068000A8906 /* libsqlite3.tbd */; };
+		B9981CBC2161F076000A8906 /* libstdc++.6.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B9981CBB2161F076000A8906 /* libstdc++.6.tbd */; };
+		B9981CBF2161F0ED000A8906 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9981CBE2161F0ED000A8906 /* Post.swift */; };
+		B9981CC12161F11D000A8906 /* Hospital.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9981CC02161F11D000A8906 /* Hospital.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +51,6 @@
 		B9981C6E2161DEB4000A8906 /* clinicAdminApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = clinicAdminApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9981C712161DEB4000A8906 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B9981C732161DEB4000A8906 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B9981C762161DEB4000A8906 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B9981C782161DEB4000A8906 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B9981C7B2161DEB4000A8906 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B9981C7D2161DEB4000A8906 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +60,21 @@
 		B9981C8D2161DEB5000A8906 /* clinicAdminAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = clinicAdminAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9981C912161DEB5000A8906 /* clinicAdminAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = clinicAdminAppUITests.swift; sourceTree = "<group>"; };
 		B9981C932161DEB5000A8906 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9981CA02161DF9D000A8906 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		B9981CA42161EDBA000A8906 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		B9981CA62161EDE6000A8906 /* MenuBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBar.swift; sourceTree = "<group>"; };
+		B9981CA82161EE1D000A8906 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
+		B9981CAA2161EE39000A8906 /* AboutCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutCell.swift; sourceTree = "<group>"; };
+		B9981CAC2161EE6F000A8906 /* InfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoCell.swift; sourceTree = "<group>"; };
+		B9981CAE2161EF1B000A8906 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		B9981CB02161EFAB000A8906 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		B9981CB12161EFAC000A8906 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		B9981CB52161F030000A8906 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		B9981CB72161F047000A8906 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		B9981CB92161F068000A8906 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		B9981CBB2161F076000A8906 /* libstdc++.6.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.tbd"; path = "usr/lib/libstdc++.6.tbd"; sourceTree = SDKROOT; };
+		B9981CBE2161F0ED000A8906 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		B9981CC02161F11D000A8906 /* Hospital.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hospital.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +82,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9981CBA2161F068000A8906 /* libsqlite3.tbd in Frameworks */,
+				B9981CB82161F050000A8906 /* AudioToolbox.framework in Frameworks */,
+				B9981CBC2161F076000A8906 /* libstdc++.6.tbd in Frameworks */,
+				B9981CB62161F039000A8906 /* SystemConfiguration.framework in Frameworks */,
+				B9981CB22161EFAC000A8906 /* Parse.framework in Frameworks */,
+				B9981CB32161EFAC000A8906 /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +115,9 @@
 				B9981C852161DEB5000A8906 /* clinicAdminAppTests */,
 				B9981C902161DEB5000A8906 /* clinicAdminAppUITests */,
 				B9981C6F2161DEB4000A8906 /* Products */,
+				B9981CB12161EFAC000A8906 /* Bolts.framework */,
+				B9981CB02161EFAB000A8906 /* Parse.framework */,
+				B9981CB42161F030000A8906 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,9 +134,11 @@
 		B9981C702161DEB4000A8906 /* clinicAdminApp */ = {
 			isa = PBXGroup;
 			children = (
+				B9981CBD2161F0DE000A8906 /* Models */,
+				B9981CA32161EB3D000A8906 /* View */,
+				B9981CA22161EAB6000A8906 /* ViewControllers */,
+				B9981C9F2161DF84000A8906 /* Helpers */,
 				B9981C712161DEB4000A8906 /* AppDelegate.swift */,
-				B9981C732161DEB4000A8906 /* ViewController.swift */,
-				B9981C752161DEB4000A8906 /* Main.storyboard */,
 				B9981C782161DEB4000A8906 /* Assets.xcassets */,
 				B9981C7A2161DEB4000A8906 /* LaunchScreen.storyboard */,
 				B9981C7D2161DEB4000A8906 /* Info.plist */,
@@ -123,6 +162,55 @@
 				B9981C932161DEB5000A8906 /* Info.plist */,
 			);
 			path = clinicAdminAppUITests;
+			sourceTree = "<group>";
+		};
+		B9981C9F2161DF84000A8906 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				B9981CA02161DF9D000A8906 /* Extensions.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		B9981CA22161EAB6000A8906 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B9981C732161DEB4000A8906 /* ViewController.swift */,
+				B9981CAE2161EF1B000A8906 /* PostViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B9981CA32161EB3D000A8906 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B9981CA42161EDBA000A8906 /* PostCell.swift */,
+				B9981CA62161EDE6000A8906 /* MenuBar.swift */,
+				B9981CA82161EE1D000A8906 /* FeedCell.swift */,
+				B9981CAA2161EE39000A8906 /* AboutCell.swift */,
+				B9981CAC2161EE6F000A8906 /* InfoCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B9981CB42161F030000A8906 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B9981CBB2161F076000A8906 /* libstdc++.6.tbd */,
+				B9981CB92161F068000A8906 /* libsqlite3.tbd */,
+				B9981CB72161F047000A8906 /* AudioToolbox.framework */,
+				B9981CB52161F030000A8906 /* SystemConfiguration.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B9981CBD2161F0DE000A8906 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B9981CBE2161F0ED000A8906 /* Post.swift */,
+				B9981CC02161F11D000A8906 /* Hospital.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,7 +322,6 @@
 			files = (
 				B9981C7C2161DEB4000A8906 /* LaunchScreen.storyboard in Resources */,
 				B9981C792161DEB4000A8906 /* Assets.xcassets in Resources */,
-				B9981C772161DEB4000A8906 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,8 +346,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9981CAF2161EF1B000A8906 /* PostViewController.swift in Sources */,
 				B9981C742161DEB4000A8906 /* ViewController.swift in Sources */,
+				B9981CA12161DF9D000A8906 /* Extensions.swift in Sources */,
 				B9981C722161DEB4000A8906 /* AppDelegate.swift in Sources */,
+				B9981CA52161EDBA000A8906 /* PostCell.swift in Sources */,
+				B9981CA72161EDE6000A8906 /* MenuBar.swift in Sources */,
+				B9981CAD2161EE6F000A8906 /* InfoCell.swift in Sources */,
+				B9981CA92161EE1D000A8906 /* FeedCell.swift in Sources */,
+				B9981CAB2161EE39000A8906 /* AboutCell.swift in Sources */,
+				B9981CBF2161F0ED000A8906 /* Post.swift in Sources */,
+				B9981CC12161F11D000A8906 /* Hospital.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,14 +392,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		B9981C752161DEB4000A8906 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B9981C762161DEB4000A8906 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B9981C7A2161DEB4000A8906 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -427,6 +515,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = clinicAdminApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pixon.clinicAdminApp;
@@ -441,6 +533,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = clinicAdminApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pixon.clinicAdminApp;
